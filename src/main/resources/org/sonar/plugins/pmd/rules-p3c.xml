@@ -36,6 +36,10 @@
         <priority>BLOCKER</priority>
         <configKey><![CDATA[rulesets/java/ali-concurrent.xml/AvoidUseTimerRule]]></configKey>
     </rule>
+    <rule key="AvoidManuallyCreateThreadRule">
+        <priority>CRITICAL</priority>
+        <configKey><![CDATA[rulesets/java/ali-concurrent.xml/AvoidManuallyCreateThreadRule]]></configKey>
+    </rule>
     <rule key="ThreadShouldSetNameRule">
         <priority>CRITICAL</priority>
         <configKey><![CDATA[rulesets/java/ali-concurrent.xml/ThreadShouldSetNameRule]]></configKey>
@@ -165,6 +169,12 @@
     <rule key="StringConcatRule">
         <priority>MAJOR</priority>
         <configKey><![CDATA[rulesets/java/ali-oop.xml/PojoMustOverrideToStringRule]]></configKey>
+    </rule>
+
+    <!--AlibabaJavaOrm-->
+    <rule key="IbatisMethodQueryForListRule">
+        <priority>MAJOR</priority>
+        <configKey><![CDATA[rulesets/java/ali-orm.xml/IbatisMethodQueryForListRule]]></configKey>
     </rule>
 
     <!--AlibabaJavaOthers-->

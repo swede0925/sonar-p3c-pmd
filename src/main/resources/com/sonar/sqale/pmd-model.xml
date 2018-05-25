@@ -4040,6 +4040,19 @@
                 </prop>
             </chc>
             <chc>
+              <rule-repo>pmd</rule-repo>
+              <rule-key>AvoidManuallyCreateThreadRule</rule-key>
+              <prop>
+                <key>remediationFunction</key>
+                <txt>CONSTANT_ISSUE</txt>
+              </prop>
+              <prop>
+                <key>offset</key>
+                <val>2</val>
+                <txt>min</txt>
+              </prop>
+            </chc>
+            <chc>
                 <rule-repo>pmd</rule-repo>
                 <rule-key>ThreadShouldSetNameRule</rule-key>
                 <prop>
@@ -4453,7 +4466,20 @@
                     <txt>min</txt>
                 </prop>
             </chc>
-
+           <!--AlibabaJavaOrm-->
+           <chc>
+             <rule-repo>pmd</rule-repo>
+             <rule-key>IbatisMethodQueryForListRule</rule-key>
+             <prop>
+               <key>remediationFunction</key>
+               <txt>CONSTANT_ISSUE</txt>
+             </prop>
+             <prop>
+               <key>offset</key>
+               <val>2</val>
+               <txt>min</txt>
+             </prop>
+           </chc>
             <!--AlibabaJavaOthers-->
             <chc>
                 <rule-repo>pmd</rule-repo>
